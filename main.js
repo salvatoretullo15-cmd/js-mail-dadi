@@ -46,3 +46,9 @@ for (let i = 0 ; i < guests.length && !can_access; i++) {
     console.log("founded");
    }
 } 
+console.log(can_access);
+if(can_access === true){
+    console.log("bienvenidos amigos");
+}else{
+    console.log("adios amigos");
+}
