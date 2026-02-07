@@ -30,3 +30,19 @@ const guests = [
     "edgain@gmail.com",
     "menedezbrother@libero.com",
 ]
+//Chiedi all’utente la sua email,
+const guest_user = prompt("type your email");
+
+let can_access = false
+
+//controlla che sia nella lista di chi può accedere
+for (let i = 0 ; i < guests.length && !can_access; i++) {
+    const guest = guests[i];
+    console.log(guest);
+
+
+   if (guest === guest_user) {
+    can_access=true
+    console.log("founded");
+   }
+} 
