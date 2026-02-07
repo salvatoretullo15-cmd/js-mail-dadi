@@ -46,6 +46,8 @@ for (let i = 0 ; i < guests.length && !can_access; i++) {
     console.log("founded");
    }
 } 
+
+//stampa un messaggio appropriato sull’esito del controllo, utilizzando un ciclo for
 console.log(can_access);
 if(can_access === true){
     console.log("bienvenidos amigos");
