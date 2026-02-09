@@ -4,9 +4,28 @@ console.log("it works");
 //Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 //numeri casuali per il player
+
+const player_number = Math.ceil(Math.random()*6)
+
 //numeri casuali per il computer
+
+const pc_number = Math.ceil(Math.random()*6)
+
+let game_message;
+console.log( pc_number, player_number );
+
 //Stabilire il vincitore, in base a chi fa il punteggio più alto
 
+if (player_number>pc_number) {
+    message="you win player , pc is a looser"
+} else if (pc_number>player_number){
+    message="you loose player , pc is the winner"
+}else{
+    message="try again player"
+}
+console.log(message);
+
+    
 /*
 //Mail
 //Crea una lista di email di invitati ad una festa
